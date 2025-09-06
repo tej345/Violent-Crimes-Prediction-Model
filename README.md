@@ -1,21 +1,22 @@
-Violent Crimes Prediction Model
+# Violent Crimes Prediction Model 
 
 This project predicts the violent crimes per population for communities using socio-economic, demographic, and housing data. The dataset includes features like income, poverty, family stability, urbanization, and age distributions.
 
-Key highlights of this project:
+## Key highlights of this project:
 
-Feature Engineering: Derived meaningful features such as youth-to-elderly ratio, income-to-rent ratio, interaction terms between unemployment and youth, urbanization and poverty, and immigrant language barriers. Skewed features are log-transformed for better model performance.
+1) Feature Engineering: Derived meaningful features such as youth-to-elderly ratio, income-to-rent ratio, interaction terms between unemployment and youth, urbanization and poverty, and immigrant language barriers. Skewed features are log-transformed for better model performance.
 
-Models Used:
+2) Ensemble Learning: Combined predictions from multiple models using linear regression-based weighting to minimize validation MSE.
 
-XGBoost Regressor for gradient-boosted tree predictions.
+3) Evaluation: Models are evaluated using Mean Squared Error (MSE) on a validation split, with final predictions submitted for Kaggle evaluation.
 
-Random Forest Regressor for ensemble-based predictions.
+## Models Used:
 
-LightGBM Regressor with optimized parameters for faster, efficient training.
+1) XGBoost Regressor for gradient-boosted tree predictions.
 
-Ensemble Learning: Combined predictions from multiple models using linear regression-based weighting to minimize validation MSE.
+2) Random Forest Regressor for ensemble-based predictions.
 
-Evaluation: Models are evaluated using Mean Squared Error (MSE) on a validation split, with final predictions submitted for Kaggle evaluation.
+3) LightGBM Regressor with optimized parameters for faster, efficient training.
+
 
 This project demonstrates a full workflow from data preprocessing and feature engineering to model training, ensembling, and prediction for a real-world regression problem.
